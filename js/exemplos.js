@@ -27,3 +27,50 @@ console.log('---------------');
 for(let nome in nomes){
     console.log(nome);
 }
+
+console.log('=====================');
+let prompt = require('prompt-sync')();
+
+let curso = prompt('Qual nome do seu curso? ');
+console.log('Curso: ' +curso);
+
+let fase = Number(prompt('Informe a fase: '));
+console.log(fase + 'a fase');
+
+console.log('=====================');
+let sol = true;
+let vento = false;
+
+if(sol == true && vento == false){
+    console.log('Eu vou a praia');
+}else{
+    console.log('Não vou a praia');
+}
+
+console.log('=====================');
+let tempo = prompt('Como está o tempo hoje?');
+switch(tempo){
+    case 'sol':{
+        console.log('Vou a praia');
+        break;
+    }
+    case 'nublado':{
+        console.log('Vou ao cinema');
+        break;
+    }
+    default: {
+        console.log('Fico em casa');
+    }
+}
+
+console.log('=====================');
+let contador = 0;
+
+while(contador < 10){
+    if(contador % 2 == 0){
+        console.log('Par: '+ contador);
+    }else{
+        console.log('Impar: '+contador);
+    }
+    contador++;
+}
