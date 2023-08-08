@@ -1,0 +1,21 @@
+
+
+
+.divMain{
+    font-family: 'Poppins', sans-serif;
+    background-color: rgb(226, 226, 226);
+    margin: auto;
+    width: 50%;
+    padding: 10px;
+    height: 500px;
+}
+
+h1{
+    text-align: center;
+}
+
+input{
+    border-radius: 5px;
+}
+
+
