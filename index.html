@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <!-- configurações, importações, scripts, etc -->
+        <title id="titulo">Consulta de Endereços</title>
+        <script src="/js/consultaviacep.js"></script>
+        <link rel="stylesheet" href="css/estilos.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+    </head>
+    <body>
+
+        <div id="divCep" class="divMain">
+            <h1>Consultar CEP</h1>
+            <label id="lblCep">Informe o CEP: </label>
+            <br>
+            <input type="text" id="txtCep">
+            <button type="button" onclick="buscarCEP()">Buscar CEP</button>
+            <br>
+            <br>
+
+            <label>Bairro: </label>
+            <br>
+            <input type="text" id="txtBairro">
+            <br>
+
+            <label>Cidade: </label>
+            <br>
+            <input type="text" id="txtLocalidade">
+            <br>
+
+            <label>Rua: </label>
+            <br>
+            <input type="text" id="txtRua">
+            <br>
+
+            <label>Estado: </label>
+            <br>
+            <input type="text" id="txtEstado">
+        </div>
+    </body>
+</html>
