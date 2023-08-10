@@ -27,6 +27,13 @@ async function buscarCEP(cep){
         preencherCamposJSON(json);
     }
 
+    if(limpar){
+        txtBairro.style = "color: black; font-weight: bold;";
+        txtEstado.style = "color: black; font-weight: bold;";
+        txtLocalidade.style = "color: black; font-weight: bold;";
+        txtRua.style = "color: black; font-weight: bold;";
+    }
+
     console.log(json);
 }
 function preencherCamposJSON(json){

@@ -1,21 +1,53 @@
 
-
+body{
+    background-color: rgb(0,139,139);
+    background: radial-gradient(circle, rgba(0,139,139,1) 0%, rgba(0,41,41,1) 100%);
+}
 
 .divMain{
     font-family: 'Poppins', sans-serif;
-    background-color: rgb(226, 226, 226);
-    margin: auto;
-    width: 50%;
+    font-size: 18px;
+    background-color: rgba(226, 226, 226, 0.8);
+    margin-top: 5%;
+    margin-left: auto;
+    margin-right: auto;
+    width: 30%;
     padding: 10px;
-    height: 500px;
+    height: 550px;
+    border: solid white;
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: 5px 5px 30px -8px white ;
 }
 
 h1{
     text-align: center;
+    border-bottom: 1px solid black;
+    
 }
 
 input{
+    font-family: 'Poppins', sans-serif;
+    font-size: 14px;
+    border: 2px solid #333;
     border-radius: 5px;
+    padding: 3px;
+    margin: 5px;    
+}
+
+#btnBuscar{
+    font-family: 'Poppins', sans-serif;
+    font-weight: bold;
+    border: 2px solid #333;
+    border-radius: 7px;
+    text-shadow: white;
+    padding: 5px;
+}
+
+#btnBuscar:hover{
+    background-color: #333;
+    color: white;
+    box-shadow: 2px 2px 4px, -2px -2px 4px;
 }
 
 
