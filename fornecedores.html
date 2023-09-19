@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <!-- configurações, importações, scripts, etc -->
+        <title id="titulo">Cadastro de Fornecedores</title>
+        <script src="/js/consultaviacep.js"></script>
+        <script src="/js/fabricante.metodos.js"></script>
+        <link rel="stylesheet" href="css/estilos.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+    </head>
+    <body>
+
+        <div id="divCep" class="divMain">
+            <h1>Cadastrar Fornecedor</h1>
+            <label>Nome: </label>
+            <br>
+            <input type="text" id="txtNome">
+            <br>
+
+            <label>CNPJ: </label>
+            <br>
+            <input type="text" id="txtCnpj">
+            <br>
+
+            <label id="lblCep">CEP: </label>
+            <br>
+            <input type="text" id="txtCep">
+            <br>
+            
+            <button id="btnBuscar" type="button" onclick="buscarCEP()">Consultar CEP</button>
+            <br>
+            <label>Cidade: </label>
+            <br>
+            <input type="text" id="txtLocalidade" disabled>
+            <br>
+
+            <label>UF: </label>
+            <br>
+            <input type="text" id="txtEstado" disabled >
+            <br>
+
+            <button id="btnCadastrar" type="button" onclick="cadastrar()">Cadastrar</button>
+
+        </div>
+        <main class="principal">
+            <button id="btnPesquisar" type="button" onclick="buscarTodosFabricantes()">Pesquisar Fornecedores</button>
+            <button id="btnLimpar" type="button" onclick="limparTabela()">Limpar Tabela</button>
+            <section class="section__principal">
+                <table>
+                    <thead>
+                        <th>#</th>
+                        <th>Nome</th>
+                        <th>CNPJ</th>
+                        <th>CEP</th>
+                        <th>Cidade</th>
+                        <th>UF</th>
+                    </thead>
+                    <tbody id="corpoTabela">
+                        
+                    </tbody>
+                </table>
+            </section>
+        </main>
+    </body>
+</html>

@@ -37,21 +37,19 @@ async function buscarCEP(cep){
     console.log(json);
 }
 function preencherCamposJSON(json){
-    if(json.bairro){
-        txtBairro.value = json.bairro;
+    if(json.cidade){
+        txtLocalidade.value = json.localidade;
     }else{
-        txtBairro.disabled = false;
+        txtLocalidade.disabled = true;
     }
 
-    if(json.logradouro){
-        txtRua.value = json.logradouro;
+    if(json.uf){
+        txtEstado.value = json.uf;
     }else{
-        txtRua.disabled = false;
+        txtEstado.disabled = true;
     }
 
-    txtBairro.value = json.bairro;
     txtLocalidade.value = json.localidade;
-    txtRua.value = json.logradouro;
     txtEstado.value = json.uf;
 }
 
@@ -61,13 +59,10 @@ function mostrarTelaDeErro(){
 }
 
 function limpar(){
-    txtBairro.value = '';
     txtLocalidade.value = '';
     txtEstado.value = '';
-    txtRua.value = '';
 
-    txtBairro.disabled = true;
     txtLocalidade.disabled = true;
     txtEstado.disabled = true;
-    txtRua.disabled = true;
 }
+
