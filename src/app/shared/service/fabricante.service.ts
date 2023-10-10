@@ -1,5 +1,7 @@
 import { Injectable } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
+import { Fabricante } from '../model/fabricante';
+import { Observable } from 'rxjs';
 
 @Injectable({
   providedIn: 'root'
@@ -12,5 +14,9 @@ export class FabricanteService {
 
   // Declarar os métodos da API REST
   //TODO
+
+  listarTodos(): Observable<Array<Fabricante>> {
+    return this.httpClient.get<Array<Fabricante>>(this.API);
+  }
 
 }

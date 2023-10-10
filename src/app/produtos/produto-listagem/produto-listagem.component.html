@@ -4,7 +4,7 @@
     <div class="col-sm-12">
       <!-- https://getbootstrap.com/docs/4.0/components/card/ -->
       <div class="card">
-        <div class="card-header bg-primary text-white">
+        <div class="card-header bg-dark text-white">
           <h5>Filtros</h5>
         </div>
         <div class="card-body card-info">
@@ -20,7 +20,6 @@
                 <label for="nomeFabricante">Fabricante</label>
                 <input class="form-control" name="nomeFabricante"  [(ngModel)]="seletor.nomeFabricante">
               </div>
-
               <br>
               <div class="form-group">
                 <button type="submit"   class="form-control btn btn-primary" (click)="pesquisar()">Pesquisar</button>
