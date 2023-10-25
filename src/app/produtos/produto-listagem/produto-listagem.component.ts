@@ -38,6 +38,10 @@ export class ProdutoListagemComponent implements OnInit {
     console.log('Editando o produto de id: ', id);
   }
 
+  excluir(id: number){
+    this.produtoService.excluir(id).subscribe()
+  }
+
   pesquisar(){
     this.produtoService.listarComSeletor(this.seletor).subscribe(
       resultado => {
